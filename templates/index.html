@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website to PDF Converter</title>
+   <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 50px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius:15px;
+        box-shadow: 0 25px 25px rgba(0,0,0,0.25);
+        margin-top:100px;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="url"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        border-radius:10px;
+        border:2px solid rgb(4, 43, 4);
+        background-color: rgb(129, 194, 129);
+    }
+    button {
+        padding: 10px;
+        font-size: 16px;
+        background-color:#0d4108 ;
+        color: white;
+        border: none;
+        width:200px;
+        margin-left:200px;
+        cursor: pointer;
+        border-radius:7px;
+        margin-top:20px;
+    }
+    button:hover {
+        background-color: #358338;
+    }
+   </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Convert Website to PDF</h1>
+        <form method="post" action="/convert">
+            <input type="url" name="url" placeholder="Enter website URL" required>
+            <button type="submit">Convert to PDF</button>
+        </form>
+    </div>
+</body>
+</html>
